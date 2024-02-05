@@ -10,3 +10,5 @@ urlpatterns = [
     # path('blog', views., name=''),
     # path('blog', views., name=''),
 ]
+
+
