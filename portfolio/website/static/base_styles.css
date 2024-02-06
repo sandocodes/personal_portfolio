@@ -1,0 +1,29 @@
+/* Base or Default Styles */
+/* On large devices */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --primary_color: ;
+    --call_to_action_hover: ;
+    --call_to_action: ;
+}
+
+body {
+    background-color: #babaf5;
+}
+
+.wrapper {
+    max-width: 1300px;
+    padding: 15px;
+    margin: auto;
+    min-height: 100lvh;
+    background-color: yellow;
+}
+
+
+
+/* On Mobile Devices */

@@ -5,26 +5,26 @@ from django.template import loader
 
 
 # Create your views here.
-
 def home_page(request):
-    template = loader.get_template('home.html')
-    return HttpResponse(template.render())
+    page_name = 'home.html'
+    return render(request, page_name, {'title': 'Welcome Page'})
 
 
 # about view
 def about_page(request):
-    template = loader.get_template('about_page.html')
-    return HttpResponse(template.render())
+    # template = loader.get_template('about_page.html')
+    page_name = 'about_page.html'
+    return render(request, page_name, {'title': 'About Page'})
 
 
 # projects view
 def projects_page(request):
-    template = loader.get_template('projects_page.html')
-    return HttpResponse(template.render())
+    page_name = 'projects_page.html'
+    return render(request, page_name, {'title': 'Projects Page'})
 
 
-# blog seciton view
+# blog seciton view - Will render blog posts later
 def blog_section_page(request):
-    template = loader.get_template('blog_section.html')
-    return HttpResponse(template.render())
+    page_name = 'blog_section.html'
+    return render(request, page_name, {'title': 'Blog - Weekly 5 Minutes Read'})
 
