@@ -1,5 +1,4 @@
 .contact_form {
-    background-color: yellow;
     padding: 15px;
     margin-top: 75px;
 }
@@ -24,4 +23,5 @@ form {
 .send_message_btn {
     cursor: pointer;
     background-color: var(--call_to_action);
+    color: var(--test_bg_color);
 }

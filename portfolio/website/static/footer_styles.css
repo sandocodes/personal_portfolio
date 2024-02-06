@@ -3,7 +3,7 @@ footer {
     margin: auto;
     padding: 35px 5px;
     min-height: 60px;
-    border-top: 1px solid lightgray;
+    border-top: 1px solid var(--body_text_color);
     text-align: center;
     /* background-color: yellow; */
 }
@@ -12,7 +12,7 @@ footer {
 footer .logo {
     font-size: 35px;
     text-decoration: none;
-    color: #4e4e4e;
+    color: var(--body_text_color);
     margin: 20px 0;
     font-weight: bolder;
     font-family: var(--link_font);
@@ -31,13 +31,55 @@ footer .logo {
     margin: 0 7px;
     text-decoration: none;
     font-weight: bold;
-    font-size: 15px;
-    font-family: var(--link_font);
+    font-size: 16px;
+    font-family: var(--body_font);
 }
 
-/* .footer_nav_links link:first-child {
-    margin-left: 0;
-} */
+/* Footer Social Links */
+.footer_social_links {
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto;
+}
 
+.footer_social_links > a {
+    margin: 0 7px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+}
 
+.footer_social_links .fa-brands {
+    font-size: 25px;
+    color: #4e4e4e;
+}
+
+.footer_social_links .fa-github {
+    color: var(--github_color);
+}
+
+.footer_social_links .fa-instagram {
+    color: var(--instagram_color);
+}
+
+.footer_social_links .fa-linkedin-in {
+    color: var(--linkedin_color);
+}
+ 
+.footer_social_links .fa-whatsapp {
+    color: var(--whatsapp_color);
+}
+
+/* Footer All Rights Reserved */
+.footer_arr {
+    /* background-color: yellow; */
+    max-width: 400px;
+    margin: auto;
+}
+
+.footer_arr > p {
+    font-family: var(--body_font);
+}
 

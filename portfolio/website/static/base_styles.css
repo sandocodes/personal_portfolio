@@ -12,9 +12,16 @@
 :root {
     --link_font: 'Montserrat', sans-serif;
     --body_font: 'Roboto Mono', monospace;
-    --primary_color: ;
+    --instagram_color: #3f729b;
+    --whatsapp_color: #43d854;
+    --github_color: #00405d;
+    --linkedin_color: #0077b5;
+    --body_text_color: #4D5061;
     --call_to_action_hover: ;
-    --call_to_action: ;
+    --background_color: #F4FAFF;
+    --test_bg_color: #FBFEF9;
+    --btn_color: #306B34;
+    --call_to_action: #202030;
 }
 
 .wrapper {
@@ -22,8 +29,11 @@
     padding: 15px;
     margin: auto;
     min-height: 100lvh;
+    color: var(--body_text_color);
 }
 
-
+body {
+    background-color: var(--text_bg_color);
+}
 
 /* On Mobile Devices */
