@@ -1,0 +1,42 @@
+footer {
+    max-width: 1300px;
+    margin: auto;
+    padding: 35px 5px;
+    min-height: 60px;
+    border-top: 1px solid lightgray;
+    text-align: center;
+    /* background-color: yellow; */
+}
+
+/* Logo in Footer Section */
+footer .logo {
+    font-size: 35px;
+    text-decoration: none;
+    color: #4e4e4e;
+    margin: 20px 0;
+    font-weight: bolder;
+    font-family: var(--link_font);
+}
+
+/* Page Links in the footer section */
+.footer_nav_links {
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto;
+}
+
+.footer_nav_links > a {
+    margin: 0 7px;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: var(--link_font);
+}
+
+/* .footer_nav_links link:first-child {
+    margin-left: 0;
+} */
+
+
+

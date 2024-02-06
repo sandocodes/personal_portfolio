@@ -28,3 +28,8 @@ def blog_section_page(request):
     page_name = 'blog_section.html'
     return render(request, page_name, {'title': 'Blog - Weekly 5 Minutes Read'})
 
+# Contact seciton view 
+def contact_page(request):
+    page_name = 'contact.html'
+    return render(request, page_name, {'title': 'Blog - Weekly 5 Minutes Read'})
+

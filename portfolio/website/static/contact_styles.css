@@ -1,0 +1,27 @@
+.contact_form {
+    background-color: yellow;
+    padding: 15px;
+    margin-top: 75px;
+}
+
+.form_heading h3 {
+    margin: 25px 0;
+    font-size: 28px;
+}
+
+form {
+    max-width: 500px;
+    margin: auto;
+}
+
+.name, .email, .subject, #message, .send_message_btn {
+    width: 100%;
+    margin: 7px;
+    padding: 12px 10px;
+    border-radius: 5px;
+}
+
+.send_message_btn {
+    cursor: pointer;
+    background-color: var(--call_to_action);
+}

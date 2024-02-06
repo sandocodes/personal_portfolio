@@ -1,0 +1,14 @@
+{% extends 'base_layout.html' %}
+
+{% block content %}
+<form action="#" class="contact_form">
+    <div class="form_heading">
+        <h3>Let's Work Together</h3>
+    </div>
+    <input type="text" class="name" placeholder="Name">
+    <input type="email" class="email" placeholder="Email">
+    <input type="text" class="subject" placeholder="Your Subject">
+    <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message"></textarea>
+    <input type="submit" value="Send Message" class="send_message_btn">
+</form>
+{% endblock%}
