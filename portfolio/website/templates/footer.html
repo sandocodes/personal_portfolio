@@ -1,3 +1,6 @@
+{% load bootstrap_icons %}
+
+
 <footer>
     <!-- Add Logo Image Later -->
     <a href="{% url 'website_home' %}" class="logo">
@@ -11,10 +14,12 @@
         <a href="{% url 'website_contact_page' %}" class="link contact">Contact</a>
     </div>
     <div class="footer_social_links">
-        <a href="https://github.com/sandocodes" target="_blank" class="social grubhub">grubhub</a>
-        <a href="#" class="social linkedin">linkedin</a>
-        <a href="#" class="social instagram">instagram</a>
-        <a href="#" class="social whatsapp">whatsapp</a>
+        <a href="https://github.com/sandocodes" target="_blank" class="social grubhub">
+            {% bs_icon 'github' %}
+        </a>
+        <a href="#" class="social linkedin">{% bs_icon 'linkedin' %}</a>
+        <a href="#" class="social instagram">{% bs_icon 'instagram' %}</a>
+        <a href="#" class="social whatsapp">{% bs_icon 'whatsapp' %}</a>
     </div>
     <div>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas voluptatem aut natus distinctio nisi minima eum impedit voluptatum et consequatur.</p>
