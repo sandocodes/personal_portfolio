@@ -18,6 +18,10 @@ footer .logo {
     font-family: var(--link_font);
 }
 
+footer .logo img {
+    min-height: 15px;
+}
+
 /* Page Links in the footer section */
 .footer_nav_links {
     padding: 10px 0;

@@ -1,7 +1,10 @@
+{% load static %}
+
+
 <footer>
     <!-- Add Logo Image Later -->
     <a href="{% url 'website_home' %}" class="logo">
-        <h4>sando kollie</h4>
+        <img src="{% static 'assets/my_logo_2.png' %}" alt="logo_image">
     </a>
     <div class="footer_nav_links">
         <a href="{% url 'website_home' %}" class="link home">Home</a>
@@ -19,6 +22,6 @@
         <a href="#" class="social whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
     </div>
     <div class="footer_arr">
-        <p>All rights reserved. Copyright &copy;2024</p>
+        <p>All rights reserved. Copyright &copy; 2024</p>
     </div>
 </footer>
