@@ -3,14 +3,14 @@ footer {
     margin: auto;
     padding: 35px 5px;
     min-height: 60px;
-    border-top: 1px solid var(--body_text_color);
+    border-top: 1px solid var(--border_line);
     text-align: center;
     /* background-color: yellow; */
 }
 
 /* Logo in Footer Section */
 footer .logo {
-    font-size: 35px;
+    font-size: 30px;
     text-decoration: none;
     color: var(--body_text_color);
     margin: 20px 0;
@@ -36,6 +36,7 @@ footer .logo img {
     text-decoration: none;
     font-weight: bold;
     font-size: 16px;
+    color: var(--main_color);
     font-family: var(--body_font);
 }
 
