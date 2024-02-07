@@ -2,9 +2,58 @@ nav {
     max-width: 1300px;
     margin: auto;
     padding: 15px;
-    min-height: 80px;
+    min-height: 120px;
     border-bottom: 1px solid #d3d3d3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
+/* Logo */
+nav .logo img {
+    height: 60px;
+}
 
+/* Social Links */
+nav .social_links {
+    text-decoration: none;
+}
 
+nav .social_links > a {
+    margin-left: 10px;
+    text-decoration: none;
+}
+
+nav .social_links .fa-brands {
+    font-size: 25px;
+}
+
+/* Hamburger Menu */
+nav .hamburger_menu {
+    /* background-color: yellow; */
+    width: 235px;
+    display: flex;
+    justify-content: end;
+}
+
+.hamburger_menu .lines {
+    display: block;
+    height: 26px;
+    width: 32px;
+    /* position: absolute; */
+    top: 17px;
+    left: 20px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.hamburger_menu .lines span {
+    display: block;
+    height: 4px;
+    width: 100%;
+    border-radius: 10px;
+    background: #0e2431;
+}

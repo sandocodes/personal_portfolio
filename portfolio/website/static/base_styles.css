@@ -36,4 +36,28 @@ body {
     background-color: var(--text_bg_color);
 }
 
+/* Social Media Stylings */
+
+.fa-github {
+    color: var(--github_color);
+}
+
+.fa-instagram {
+    color: var(--instagram_color);
+}
+
+.fa-linkedin-in {
+    color: var(--linkedin_color);
+}
+
+.fa-whatsapp {
+    color: var(--whatsapp_color);
+}
+
+footer .fa-brands {
+    font-size: 30px;
+}
+
+
+
 /* On Mobile Devices */

@@ -1,8 +1,8 @@
-{% load bootstrap_icons %}
+{% load static %}
 
 <nav>
     <a href="{% url 'website_home' %}" class="logo">
-        <h4 class="">sando kollie</h4>
+        <img src="{% static 'assets/my_logo_1.png' %}" alt="">
     </a>
     <div class="social_links">
         <a href="https://github.com/sandocodes" target="_blank" class="social grubhub">
@@ -13,8 +13,10 @@
         <a href="#" class="social whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
     </div>
     <div class="hamburger_menu">
-        <span></span>
-        <span></span>
-        <span></span>
+        <div class="lines">
+            <span class="line1"></span>
+            <span class="line2"></span>
+            <span class="line3"></span>
+        </div>
     </div>
 </nav>

@@ -19,7 +19,7 @@ footer .logo {
 }
 
 footer .logo img {
-    min-height: 15px;
+    height: 55px;
 }
 
 /* Page Links in the footer section */
@@ -56,25 +56,9 @@ footer .logo img {
 }
 
 .footer_social_links .fa-brands {
-    font-size: 25px;
-    color: #4e4e4e;
+    font-size: 30px;
 }
 
-.footer_social_links .fa-github {
-    color: var(--github_color);
-}
-
-.footer_social_links .fa-instagram {
-    color: var(--instagram_color);
-}
-
-.footer_social_links .fa-linkedin-in {
-    color: var(--linkedin_color);
-}
- 
-.footer_social_links .fa-whatsapp {
-    color: var(--whatsapp_color);
-}
 
 /* Footer All Rights Reserved */
 .footer_arr {
