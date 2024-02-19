@@ -3,14 +3,9 @@
 
 
 /* On large devices */
-* {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-}
 
 :root {
-    --main_color: #2C1320;
+    --main_color: #553C46;
     --link_font: 'Montserrat', sans-serif;
     --body_font: 'Roboto Mono', monospace;
     --instagram_color: #3f729b;
@@ -26,9 +21,15 @@
     --border_line: #dddddd;
 }
 
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: var(--link_font);
+}
+
 .wrapper {
     max-width: 1300px;
-    padding: 15px;
     margin: auto;
     min-height: 100lvh;
     color: var(--body_text_color);

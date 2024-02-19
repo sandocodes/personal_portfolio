@@ -1,13 +1,17 @@
 /* Blog Page Styles */
-.blog {
-    background-color: rgb(255, 255, 255);
-    color: black;
+/* .blog_section {
+
+} */
+.blog_section {
+    font-family: var(--body_font);
 }
 
-.blog .blog_hero {
+.blog_section .blog_hero {
     max-width: 100%;
-    background-color: aqua;
+    background-color: var(--main_color);
+    color: var(--background_color);
     min-height: 30vh;
+    padding: 40px;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -20,5 +24,11 @@
 }
 
 .blog_hero .blog_page_description {
-    font-size: 19px;
+    font-size: 22px;
+    max-width: 650px;
+    line-height: 1.8rem;
+    margin: 25px 0;
 }
+
+/* /* Blog Posts Styling  */
+/* Latest Posts */
