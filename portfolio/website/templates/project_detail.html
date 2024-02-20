@@ -4,6 +4,7 @@
 <div class="blog_detail">
     <div class="blog">
         <h3>{{ project.name }}</h3>
+        <p><a href="https://github.com/sandocodes/100_Days_of_code_python/tree/main/day_20/project" target="_blank">Project Link</a></p>
         <p>{{ project.date_created.date }}</p>
         {% if project.image %}
         <img src="{{project.image.url}}" alt="{{project.name}}">

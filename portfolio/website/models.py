@@ -38,6 +38,7 @@ class Project(models.Model):
     date_created = models.DateTimeField(auto_now_add=True)
     last_modified = models.DateField(auto_now=True)
     image = models.ImageField(upload_to="projects/", null=True, blank=True)
+    project_url = models.URLField(max_length=255, null=True)
 
 
     def __str__(self) -> str:
