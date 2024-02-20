@@ -31,22 +31,23 @@
 /* About Short */
 .about_short {
     /* Test Code */
-    /* background-color: yellow; */
+    /* border: #553C46 1px solid;
+    background-color: yellow; */
     border-radius: 15px;
     max-width: 950px;
     margin: auto;
-    margin: 100px auto;
-    min-height: auto;
+    margin: 70px auto;
+    min-height: 200px;
     padding: 30px 25px;
     display: grid;
-    gap: 1.2rem;
     grid-template-columns: 1fr 4fr;
+    gap: 1.2rem;
 }
 
 .about_short img {
     border-radius: 20px 0 0 20px;
     object-fit: cover;
-    height: 298px;
+    height: 300px;
 }
 
 /* .about_short .about_me {
@@ -55,11 +56,11 @@
 
 .about_short .about_me p {
     font-size: 19.8px;
-    padding: 0 10px;
+    padding: 10px;
 }
 
 .about_short .about_me .link_btns {
-    padding: 10px;
+    padding: 5px 10px;
     margin-top: 15px;
 }
 
@@ -87,12 +88,12 @@
 
 
 /* Featured Projects */
-.featured_projects {
+.home_page .featured_projects {
     max-width: 950px;
     margin: auto;
     min-height: 200px;
-    padding: 30px 25px;
-    border: #553C46 1px solid;
+    padding: 10px 25px;
+    /* border: #553C46 1px solid; */
 }
 
 .featured_projects h3 {
@@ -100,10 +101,51 @@
 }
 
 .featured_projects > div {
-    background-color: yellow;
     max-width: 100%;
     display: grid;
     gap: 1.2rem;
-    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
     padding: 30px 0;
+}
+
+.featured_projects > div ._project {
+    /* border: #706565 1px solid; */
+    display: grid;
+    grid-template-columns: 2fr 4fr;
+    color: var(--main_color);
+    min-height: auto;
+    text-decoration: none;
+    color: rgb(124, 118, 118);
+    border-radius: 15px;
+    box-shadow: -5px 0px 25px 0px rgba(204,195,195,0.7);
+    -webkit-box-shadow: -5px 0px 25px 0px rgba(204,195,195,0.7);
+    -moz-box-shadow: -5px 0px 25px 0px rgba(204,195,195,0.7);
+}
+
+.featured_projects > div ._project img {
+    min-height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 15px 0 0 15px;
+}
+
+.featured_projects > div ._project .project_description {
+    color: #553C46;
+    padding: 20px;
+}
+
+.featured_projects > div ._project .project_description .project_title {
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: 900;
+}
+
+.featured_projects > div ._project .project_description .date_published {
+    font-weight: 700;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.featured_projects > div ._project .project_description .snippet {
+    font-size: 17px;
 }

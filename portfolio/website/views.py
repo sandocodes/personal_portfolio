@@ -8,7 +8,7 @@ from .models import BlogPost, Project
 # Create your views here.
 def home_page(request):
     page_name = 'home.html'
-    featured_project = Project.objects.all()
+    featured_project = Project.objects.all()[:2]
     articles = BlogPost.objects.all()[:3]
     return render(request, page_name, {'title': 'Welcome Page', 'feat_projects': featured_project, 'articles': articles})
 

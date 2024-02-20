@@ -10,7 +10,7 @@
         <div class="about_short">
             <img src="https://avatars.githubusercontent.com/u/156034662?v=4" alt="my_image">
             <div class="about_me">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus dolorum distinctio accusantium sed iusto accusamus quis dolor exercitationem maxime eligendi Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi repudiandae libero itaque, magnam blanditiis vel. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt, recusandae.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus dolorum distinctio accusantium sed iusto accusamus quis dolor exercitationem maxime eligendi Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi repudiandae libero itaque, magnam blanditiis vel. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt, recusandae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit, pariatur. Error deleniti non odio. Aliquam cupiditate dolores harum.</p>
                 <div class="link_btns">
                     <a href="../static/professional/Resume.pdf" target="_blank">Résumé</a>
                     <a href="{% url 'website_about_page' %}">More About Me</a>
@@ -27,7 +27,7 @@
                     <div class="project_description">
                         <h4 class="project_title">{{project.name}}</h4>
                         <h6 class="date_published">{{project.date_created.date}}</h6>
-                        <p>{{project.snippet | safe}}</p>
+                        <p class="snippet">{{project.snippet | safe}}</p>
                     </div>
                 </a>
                 {% endfor %}
