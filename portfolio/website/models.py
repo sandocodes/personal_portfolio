@@ -32,7 +32,7 @@ class BlogPost(models.Model):
 
 # Programming Language
 class Language(models.Model):
-    programming_language = models.CharField(max_length=255, unique=True)
+    prog_language_name = models.CharField(max_length=255, unique=True)
 
 
 # Projects
