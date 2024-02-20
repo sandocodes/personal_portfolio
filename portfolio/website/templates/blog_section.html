@@ -14,7 +14,8 @@
                 {% for post in posts %}
                 <a href="{% url 'blog_detail' slug=post.slug %}" class="_blog">
                     {% if post.image %}
-                    <img src="{{post.image.url}}" alt="{{post.title}}">{% endif %}
+                    <img src="{{post.image.url}}" alt="{{post.title}}">
+                    {% endif %}
                     <div class="blog_description">
                         <h4 class="blog_title">{{post.title}}</h4>
                         <h6 class="date_published">{{post.date_created.date}}</h6>

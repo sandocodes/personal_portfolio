@@ -34,6 +34,9 @@ class BlogPost(models.Model):
 class Language(models.Model):
     prog_language_name = models.CharField(max_length=255, unique=True)
 
+    def __str__(self) -> str:
+        return self.prog_language_name
+
 
 # Projects
 class Project(models.Model):
