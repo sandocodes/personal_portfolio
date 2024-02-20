@@ -50,23 +50,28 @@
     height: 300px;
 }
 
-/* .about_short .about_me {
-    
-} */
+.about_short .about_me {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 10px;
+    /* background-color: yellow; */
+}
 
 .about_short .about_me p {
     font-size: 19.8px;
-    padding: 10px;
+    margin-bottom: 20px;
+    text-align: left;
 }
 
 .about_short .about_me .link_btns {
-    padding: 5px 10px;
-    margin-top: 15px;
+    /* padding: 5px 10px; */
+    padding: 10px 0;
 }
 
 
 .about_short .about_me .link_btns a {
-    margin-top: 85px;
     text-decoration: none;
     color: var(--background_color);
     padding: 8px 10px;
@@ -103,7 +108,7 @@
 .featured_projects > div {
     max-width: 100%;
     display: grid;
-    gap: 1.2rem;
+    gap: 2rem;
     grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
     padding: 30px 0;
 }
