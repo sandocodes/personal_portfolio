@@ -27,7 +27,7 @@ class BlogPost(models.Model):
         return self.title
     
     def snippet(self):
-        return self.body[:150] + "..."
+        return self.body[:100] + "..."
 
 
 # Programming Language
