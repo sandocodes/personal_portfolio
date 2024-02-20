@@ -1,1 +1,84 @@
 /* Home Page Styles */
+.home_page {
+    padding: 30px;
+    font-family: var(--body_font);
+}
+
+.home_page .home_hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 650px;
+    margin: auto;
+    padding: 30px;
+}
+
+
+.home_hero h3 {
+    font-size: 45px;
+    color: var(--main_color);
+    margin-top: 30px;
+}
+
+.home_hero p {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+/* About Short */
+.about_short {
+    /* Test Code */
+    /* background-color: yellow; */
+    border-radius: 15px;
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 100px;
+    min-height: auto;
+    padding: 30px;
+    display: grid;
+    gap: 1.8rem;
+    grid-template-columns: 1fr 4fr;
+}
+
+.about_short img {
+    border-radius: 20px 0 0 20px;
+    object-fit: cover;
+    height: 350px;
+}
+
+.about_short .about_me {
+    
+}
+
+.about_short .about_me p {
+    font-size: 20px;
+    padding: 0 10px;
+}
+
+.about_short .about_me .link_btns {
+    padding: 10px;
+    margin-top: 15px;
+}
+
+
+.about_short .about_me .link_btns a {
+    margin-top: 85px;
+    text-decoration: none;
+    color: var(--background_color);
+    padding: 8px 10px;
+    background-color: #553C46;
+    font-size: 19px;
+    margin-right: 20px;
+    border-radius: 5px;
+}
+
+.about_short .about_me .link_btns a:hover {
+    opacity: 0.7;
+    transition: all;
+}
+
+
+
+
