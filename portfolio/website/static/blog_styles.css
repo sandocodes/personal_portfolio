@@ -30,5 +30,81 @@
     margin: 25px 0;
 }
 
+/* Articles */
+.blog .articles_ {
+    max-width: 100%;
+    padding: 10px 0;
+}
+
+
+/* Latest Articles */
+.blog .articles_ .latest {
+    padding: 25px;
+    max-width: 1120px;
+    margin: auto;
+    /* background-color: yellow; */
+}
+
+.blog .articles_ .latest ._heading {
+    font-size: 25px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid lightgray;
+}
+
+.blog .articles_ .latest ._articles {
+    max-width: 100%;
+    display: grid;
+    gap: 1.2em;
+    grid-template-columns: repeat(auto-fill, minmax(265px, 1fr));
+    padding: 30px 0;
+}
+
+.blog .articles_ .latest ._articles ._blog {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    min-height: auto;
+    text-decoration: none;
+    color: rgb(124, 118, 118);
+    border-radius: 15px;
+    box-shadow: -5px 0px 25px 0px rgba(204,195,195,0.7);
+    -webkit-box-shadow: -5px 0px 25px 0px rgba(204,195,195,0.7);
+    -moz-box-shadow: -5px 0px 25px 0px rgba(204,195,195,0.7);
+}
+
+/* Card image */
+.blog .articles_ .latest ._articles ._blog img {
+    width: 100%;
+    height: 200px;
+    border-radius: 15px 15px 0 0;
+    object-fit: cover;
+    margin-bottom: 0;
+}
+
+/* Latest Individual Blog Description */
+.blog .articles_ .latest ._articles ._blog .blog_description {
+    padding: 25px;
+    background-color: white;
+    border-radius: 0 0 15px 15px;
+}
+
+.blog .articles_ .latest ._articles ._blog .blog_description .blog_title {
+    font-size: 20px;
+    margin-bottom: 16px;
+    color: black;
+}
+
+.blog .articles_ .latest ._articles ._blog .blog_description .date_published {
+    font-size: 18px;
+    color: rgb(56, 57, 58);
+    margin-bottom: 15px;
+}
+
+.blog .articles_ .latest ._articles ._blog .blog_description p {
+    font-size: 18px;
+    color: rgb(56, 57, 58);
+    line-height: 2.6vh;
+}
+
 /* /* Blog Posts Styling  */
 /* Latest Posts */

@@ -10,13 +10,27 @@
         <div class="articles_">
             <!-- Latest Articles -->
             <div class="latest">
-
+                <div class="_articles">
+                    {% for post in posts %}
+                        <a href="{% url 'blog_detail' slug=post.slug %}" class="_blog">
+                            <img src="{{post.post_image}}" alt="{{post.title}}">
+                            <div class="blog_description">
+                                <h4 class="blog_title">{{post.title}}</h4>
+                                <h6 class="date_published">{{post.date_created}}</h6>
+                                <p>{{post.snippet | safe}}</p>
+                            </div>
+                        </a>
+                    {% endfor %}
+                </div>
             </div>
             <!-- Popular Articles -->
             <div class="popular">
 
             </div>
             <!-- All Articles -->
+            <div class="all_articles">
+
+            </div>
         </div>
     </div>
 {% endblock %}

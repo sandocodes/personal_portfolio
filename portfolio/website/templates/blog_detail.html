@@ -1,0 +1,14 @@
+{% extends 'base_layout.html' %}
+
+{% block content %}
+<div class="blog_detail">
+    <div class="blog">
+        <h3>{{ blog.title }}</h3>
+        <p>{{ blog.date_created }}</p>
+        <p>{{ blog.category }}</p>
+        <div>
+            {{ blog.body | safe }}
+        </div>
+    </div>
+</div>
+{% endblock %}

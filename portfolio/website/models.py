@@ -13,7 +13,7 @@ class Category(models.Model):
 
 
 # Blog Post
-class Post(models.Model):
+class BlogPost(models.Model):
     # id field will automatically be generated each time a new blog post is created
     title = models.CharField(max_length=255, unique=True)
     body = RichTextField(blank=True, null=True)
@@ -25,4 +25,7 @@ class Post(models.Model):
 
     def __str__(self) -> str:
         return self.title
+    
+    def snippet(self):
+        return self.body[:150] + "..."
 

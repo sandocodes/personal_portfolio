@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from django.template import loader
+from .models import BlogPost
 
 
 
@@ -25,8 +26,16 @@ def projects_page(request):
 
 # blog seciton view - Will render blog posts later
 def blog_section_page(request):
+    posts = BlogPost.objects.all()
     page_name = 'blog_section.html'
-    return render(request, page_name, {'title': 'Blog - Weekly 5 Minutes Read'})
+    return render(request, page_name, {'title': 'Blog - Weekly 5 Minutes Read', 'posts': posts})
+
+# Blog Detail Page
+def blog_detail_page(request, slug):
+    page_name = 'blog_detail.html'
+    article = BlogPost.objects.get(slug=slug)
+    return render(request, page_name, {'blog': article})
+
 
 # Contact seciton view 
 def contact_page(request):
