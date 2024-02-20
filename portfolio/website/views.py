@@ -26,7 +26,7 @@ def projects_page(request):
 
 # blog seciton view - Will render blog posts later
 def blog_section_page(request):
-    posts = BlogPost.objects.all()
+    posts = BlogPost.objects.order_by('-date_created')
     page_name = 'blog_section.html'
     return render(request, page_name, {'title': 'Blog - Weekly 5 Minutes Read', 'posts': posts})
 
