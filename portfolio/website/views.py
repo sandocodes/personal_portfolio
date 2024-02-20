@@ -23,7 +23,8 @@ def about_page(request):
 # projects view
 def projects_page(request):
     page_name = 'projects_page.html'
-    return render(request, page_name, {'title': 'Projects Page'})
+    projects = Project.objects.all()
+    return render(request, page_name, {'title': 'List of My Work', 'projects': projects})
 
 
 def project_detail_page(request, slug):

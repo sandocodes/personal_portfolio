@@ -30,6 +30,11 @@ class BlogPost(models.Model):
         return self.body[:150] + "..."
 
 
+# Programming Language
+class Language(models.Model):
+    programming_language = models.CharField(max_length=255, unique=True)
+
+
 # Projects
 class Project(models.Model):
     name = models.CharField(max_length=255, unique=True)
@@ -39,6 +44,7 @@ class Project(models.Model):
     last_modified = models.DateField(auto_now=True)
     image = models.ImageField(upload_to="projects/", null=True, blank=True)
     project_url = models.URLField(max_length=255, null=True)
+    languages = models.ManyToManyField("Language", related_name="projects", null=True)
 
 
     def __str__(self) -> str:

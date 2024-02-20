@@ -4,5 +4,17 @@
     <div>
         <h1>Projects Page</h1>
         <p>Welcome to my Projects Page!</p>
+        <div>
+            {% for project in projects %}
+            <a href="{% url 'project_detail_page' slug=project.slug %}" class="_project">
+                <img src="{{ project.image.url }}" alt="{{ project.name }}">
+                <div class="project_description">
+                    <h4 class="project_title">{{project.name}}</h4>
+                    <h6 class="date_published">{{project.date_created.date}}</h6>
+                    <p>{{project.snippet | safe}}</p>
+                </div>
+            </a>
+            {% endfor %}
+        </div>
     </div>
 {% endblock %}
