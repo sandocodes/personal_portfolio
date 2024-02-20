@@ -29,3 +29,21 @@ class BlogPost(models.Model):
     def snippet(self):
         return self.body[:150] + "..."
 
+
+# Projects
+class Project(models.Model):
+    name = models.CharField(max_length=255, unique=True)
+    descritption = RichTextField(blank=False, null=False)
+    slug = models.SlugField(max_length=255, unique=True)
+    date_created = models.DateTimeField(auto_now_add=True)
+    last_modified = models.DateField(auto_now=True)
+    image = models.ImageField(upload_to="projects/", null=True, blank=True)
+
+
+    def __str__(self) -> str:
+        return self.name
+    
+
+    def snippet(self):
+        return self.descritption[:100] + "..."
+    

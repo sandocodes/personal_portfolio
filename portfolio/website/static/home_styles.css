@@ -32,28 +32,28 @@
     /* Test Code */
     /* background-color: yellow; */
     border-radius: 15px;
-    max-width: 1000px;
+    max-width: 950px;
     margin: auto;
-    margin-top: 100px;
+    margin: 100px auto;
     min-height: auto;
-    padding: 30px;
+    padding: 30px 25px;
     display: grid;
-    gap: 1.8rem;
+    gap: 1.2rem;
     grid-template-columns: 1fr 4fr;
 }
 
 .about_short img {
     border-radius: 20px 0 0 20px;
     object-fit: cover;
-    height: 350px;
+    height: 298px;
 }
 
-.about_short .about_me {
+/* .about_short .about_me {
     
-}
+} */
 
 .about_short .about_me p {
-    font-size: 20px;
+    font-size: 19.8px;
     padding: 0 10px;
 }
 
@@ -72,13 +72,27 @@
     font-size: 19px;
     margin-right: 20px;
     border-radius: 5px;
+    transition: color .25s linear;
+    transition: background-color .15s linear .1;
+    border: #553C46 2px solid;
 }
 
 .about_short .about_me .link_btns a:hover {
+    border: #553C46 2px solid;
     opacity: 0.7;
-    transition: all;
+    transition: color .25s linear, background-color .15s linear .1s;
 }
 
 
 
+/* Featured Projects */
+.featured_projects {
+    max-width: 950px;
+    margin: auto;
+    min-height: auto;
+    padding: 30px 25px;
+}
 
+.featured_projects h3 {
+    font-size: 30px;
+}

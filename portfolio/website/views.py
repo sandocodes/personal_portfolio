@@ -24,11 +24,17 @@ def projects_page(request):
     return render(request, page_name, {'title': 'Projects Page'})
 
 
+def project_detail(request, slug):
+    page_name = 'project_detail.html'
+    return render(request, page_name, {'title': 'Project Detail'})
+
+
 # blog seciton view - Will render blog posts later
 def blog_section_page(request):
     posts = BlogPost.objects.order_by('-date_created')
     page_name = 'blog_section.html'
     return render(request, page_name, {'title': 'Blog - Weekly 5 Minutes Read', 'posts': posts})
+
 
 # Blog Detail Page
 def blog_detail_page(request, slug):
