@@ -1,9 +1,16 @@
 {% extends 'base_layout.html' %}
 
 {% block content %}
-<div class="project_detail">
-    <div class="project">
-        
+<div class="blog_detail">
+    <div class="blog">
+        <h3>{{ project.name }}</h3>
+        <p>{{ project.date_created.date }}</p>
+        {% if project.image %}
+        <img src="{{project.image.url}}" alt="{{project.name}}">
+        {% endif %}
+        <div>
+            {{ project.descritption | safe }}
+        </div>
     </div>
 </div>
 {% endblock %}

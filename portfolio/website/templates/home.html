@@ -21,7 +21,32 @@
         <div class="featured_projects">
             <h3>Featured Projects</h3>
             <div>
-
+                {% for project in feat_projects %}
+                <a href="{% url 'project_detail_page' slug=project.slug %}" class="_project">
+                    <img src="{{ project.image.url }}" alt="{{ project.name }}">
+                    <div class="project_description">
+                        <h4 class="project_title">{{project.name}}</h4>
+                        <h6 class="date_published">{{project.date_created.date}}</h6>
+                        <p>{{project.snippet | safe}}</p>
+                    </div>
+                </a>
+                {% endfor %}
+            </div>
+        </div>
+        <!-- Latest Articles -->
+        <div class="latest_articles">
+            <h3>Latest Articles</h3>
+            <div>
+                {% for article in articles %}
+                <a href="{% url 'blog_detail' slug=article.slug %}" class="_article">
+                    <img src="{{ article.image.url }}" alt="{{ article.name }}">
+                    <div class="article_description">
+                        <h4 class="article_title">{{article.title}}</h4>
+                        <h6 class="date_published">{{article.date_created.date}}</h6>
+                        <p>{{article.snippet | safe}}</p>
+                    </div>
+                </a>
+                {% endfor %}
             </div>
         </div>
 

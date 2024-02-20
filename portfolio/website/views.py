@@ -1,14 +1,16 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from django.template import loader
-from .models import BlogPost
+from .models import BlogPost, Project
 
 
 
 # Create your views here.
 def home_page(request):
     page_name = 'home.html'
-    return render(request, page_name, {'title': 'Welcome Page'})
+    featured_project = Project.objects.all()
+    articles = BlogPost.objects.all()[:3]
+    return render(request, page_name, {'title': 'Welcome Page', 'feat_projects': featured_project, 'articles': articles})
 
 
 # about view
@@ -24,9 +26,10 @@ def projects_page(request):
     return render(request, page_name, {'title': 'Projects Page'})
 
 
-def project_detail(request, slug):
+def project_detail_page(request, slug):
     page_name = 'project_detail.html'
-    return render(request, page_name, {'title': 'Project Detail'})
+    project = Project.objects.get(slug=slug)
+    return render(request, page_name, {'title': 'Project Detail Page', 'project': project})
 
 
 # blog seciton view - Will render blog posts later
