@@ -5,23 +5,23 @@
         <!-- blog hero section -->
         <div class="blog_hero">
             <h3 class="blog_title">Blog</h3>
-            <p class="blog_page_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non recusandae qui asperiores impedit sit amet aut praesentium quo alias ea.</p>
+            <p class="blog_page_description">Read the latest on various topics including programming languages like Python, JavaScript, Bash Scripting, Networking and many other topics.</p>
         </div>
         <div class="articles_">
             <!-- Latest Articles -->
+            <h3 class="latest_heading">Latest</h3>
             <div class="latest">
-                <div class="_articles">
-                    {% for post in posts %}
-                        <a href="{% url 'blog_detail' slug=post.slug %}" class="_blog">
-                            <img src="{{post.post_image}}" alt="{{post.title}}">
-                            <div class="blog_description">
-                                <h4 class="blog_title">{{post.title}}</h4>
-                                <h6 class="date_published">{{post.date_created}}</h6>
-                                <p>{{post.snippet | safe}}</p>
-                            </div>
-                        </a>
-                    {% endfor %}
-                </div>
+                {% for post in posts %}
+                <a href="{% url 'blog_detail' slug=post.slug %}" class="_blog">
+                    {% if post.image %}
+                    <img src="{{post.image.url}}" alt="{{post.title}}">{% endif %}
+                    <div class="blog_description">
+                        <h4 class="blog_title">{{post.title}}</h4>
+                        <h6 class="date_published">{{post.date_created.date}}</h6>
+                        <p>{{post.snippet | safe}}</p>
+                    </div>
+                </a>
+                {% endfor %}
             </div>
             <!-- Popular Articles -->
             <div class="popular">

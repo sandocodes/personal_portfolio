@@ -4,7 +4,10 @@
 <div class="blog_detail">
     <div class="blog">
         <h3>{{ blog.title }}</h3>
-        <p>{{ blog.date_created }}</p>
+        <p>{{ blog.date_created.date }}</p>
+        {% if blog.image %}
+        <img src="{{blog.image.url}}" alt="{{blog.title}}">
+        {% endif %}
         <p>{{ blog.category }}</p>
         <div>
             {{ blog.body | safe }}

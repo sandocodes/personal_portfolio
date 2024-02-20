@@ -19,9 +19,9 @@ class BlogPost(models.Model):
     body = RichTextField(blank=True, null=True)
     slug = models.SlugField(max_length=255, unique=True)
     date_created = models.DateTimeField(auto_now_add=True)
-    last_modified = models.DateTimeField(auto_now=True)
+    last_modified = models.DateField(auto_now=True)
     categories = models.ManyToManyField("Category", related_name="posts")
-    post_image = models.ImageField(upload_to="assets")
+    image = models.ImageField(upload_to="images/", null=True, blank=True)
 
     def __str__(self) -> str:
         return self.title

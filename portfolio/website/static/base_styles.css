@@ -32,6 +32,7 @@
     max-width: 1300px;
     margin: auto;
     min-height: 100lvh;
+    padding: 25px;
     color: var(--body_text_color);
 }
 
