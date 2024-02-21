@@ -79,7 +79,7 @@
     background-color: #553C46;
     font-size: 19px;
     margin-right: 20px;
-    border-radius: 5px;
+    /* border-radius: 5px; */
     transition: color .25s linear;
     transition: background-color .15s linear .1;
     border: #553C46 2px solid;
