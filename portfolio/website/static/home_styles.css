@@ -102,7 +102,10 @@
 }
 
 .featured_projects h3 {
-    font-size: 30px;
+    font-size: 25px;
+    padding: 25px 0 15px 0;
+    border-top: 1px solid lightgray;
+    color: var(--main_color);
 }
 
 .featured_projects > div {
@@ -157,37 +160,45 @@
 
 
 /* Latest Articles */
+/* Articles */
 .home_page .latest_articles  {
     max-width: 950px;
     margin: auto;
-    min-height: 200px;
-    padding: 25px;
+    /* background-color: yellow; */
+    padding: 30px 25px;
 }
 
-.home_page .latest_articles div {
-    max-width: 1120px;
+.home_page .latest_articles h3 {
+    font-size: 25px;
+    padding: 25px 0 15px 0;
+    border-top: 1px solid lightgray;
+    color: var(--main_color);
+}
+
+.home_page .latest_articles .latest {
+    max-width: 950px;
+    margin: auto;
     display: grid;
-    gap: 2rem;
+    gap: 1.5em;
     grid-template-columns: repeat(auto-fill, minmax(265px, 1fr));
-    padding: 15px 0;
-    background-color: yellow;
+    padding: 30px 0;
+    /* background-color: yellow; */
 }
 
-.home_page .latest_articles div ._article {
+.home_page .latest_articles .latest a {
     display: flex;
     flex-direction: column;
-    color: white;
-    min-height: auto;
     text-decoration: none;
     color: rgb(124, 118, 118);
+    background-color: var(--background_color);
     border-radius: 15px;
-    box-shadow: -5px 0px 25px 0px rgba(204,195,195,0.7);
-    -webkit-box-shadow: -5px 0px 25px 0px rgba(204,195,195,0.7);
-    -moz-box-shadow: -5px 0px 25px 0px rgba(204,195,195,0.7);
+    box-shadow: -5px 0px 25px 0px rgba(204,195,195,0.7) inset;
+    -webkit-box-shadow: -5px 0px 25px 0px rgba(204,195,195,0.7) inset;
+    -moz-box-shadow: -5px 0px 25px 0px rgba(204,195,195,0.7) inset;
 }
 
 /* Card image */
-.home_page .latest_articles div ._article img {
+.home_page .latest_articles .latest ._blog img {
     width: 100%;
     height: 200px;
     border-radius: 15px 15px 0 0;
@@ -196,25 +207,25 @@
 }
 
 /* Latest Individual Blog Description */
-.home_page .latest_articles div ._article .article_description {
+.home_page .latest_articles .latest ._blog .blog_description {
     padding: 25px;
     background-color: white;
     border-radius: 0 0 15px 15px;
 }
 
-.home_page .latest_articles div ._article .article_description .article_title {
+.home_page .latest_articles .latest ._blog .blog_description .blog_title {
     font-size: 20px;
     margin-bottom: 16px;
     color: black;
 }
 
-.home_page .latest_articles div ._article .article_description .date_published {
+.home_page .latest_articles .latest ._blog .blog_description .date_published {
     font-size: 18px;
     color: rgb(56, 57, 58);
     margin-bottom: 15px;
 }
 
-.home_page .latest_articles div ._article .article_description p {
+.home_page .latest_articles .latest ._blog .blog_description p {
     font-size: 18px;
     color: rgb(56, 57, 58);
     line-height: 2.6vh;

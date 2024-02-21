@@ -9,8 +9,8 @@ from .models import BlogPost, Project
 def home_page(request):
     page_name = 'home.html'
     featured_project = Project.objects.all()[:2]
-    articles = BlogPost.objects.all()[:3]
-    return render(request, page_name, {'title': 'Welcome Page', 'feat_projects': featured_project, 'articles': articles})
+    posts = BlogPost.objects.order_by('-date_created')[:3]
+    return render(request, page_name, {'title': 'Welcome Page', 'feat_projects': featured_project, 'posts': posts})
 
 
 # about view

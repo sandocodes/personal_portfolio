@@ -34,7 +34,7 @@
 
 /* Articles */
 .blog_section .articles_  {
-    max-width: 1000px;
+    max-width: 950px;
     margin: auto;
 }
 
@@ -51,7 +51,7 @@
     display: grid;
     gap: 1.5em;
     grid-template-columns: repeat(auto-fill, minmax(265px, 1fr));
-    padding: 30px 25px;
+    padding: 30px 0;
 }
 
 .blog_section .articles_ .latest a {
