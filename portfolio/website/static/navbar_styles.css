@@ -1,12 +1,17 @@
 nav {
     max-width: 1500px;
-    margin: auto;
-    padding: 15px;
-    min-height: 120px;
+    margin: 0 auto;
+    padding: 10px 15px;
+    min-height: 30px;
     border-bottom: 1px solid var(--border_line);
+    background-color: var(--background_color);
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: sticky;
+    left: 0;
+    right: 0;
+    top: 0;
 }
 
 /* Logo */

@@ -22,12 +22,13 @@ class BlogPost(models.Model):
     last_modified = models.DateField(auto_now=True)
     categories = models.ManyToManyField("Category", related_name="posts")
     image = models.ImageField(upload_to="images/", null=True, blank=True)
+    blog_snippet = RichTextField(blank=True, null=True)
 
     def __str__(self) -> str:
         return self.title
     
     def snippet(self):
-        return self.body[:100] + "..."
+        return self.blog_snippet
 
 
 # Programming Language

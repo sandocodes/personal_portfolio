@@ -2,11 +2,13 @@
 
 {% block content %}
 <div class="blog_detail">
-    <div class="blog">
-        <h3>{{ blog.title }}</h3>
-        <p>{{ blog.date_created.date }}</p>
+    <div class="blog_image" style="background-image: url({{blog.image.url}});"></div>
+    <div class="blog_detail_head">
+        <h3 class="blog_title">{{ blog.title }}</h3>
+        <p class="date_created">{{ blog.date_created.date }}</p>
+    </div>
+    <div class="blog_detail_body">
         {% if blog.image %}
-        <img src="{{blog.image.url}}" alt="{{blog.title}}">
         {% endif %}
         <p>{{ blog.category }}</p>
         <div>

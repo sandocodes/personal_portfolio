@@ -44,7 +44,7 @@ def blog_section_page(request):
 def blog_detail_page(request, slug):
     page_name = 'blog_detail.html'
     article = BlogPost.objects.get(slug=slug)
-    return render(request, page_name, {'blog': article})
+    return render(request, page_name, {'blog': article, 'title': 'Article Detail'})
 
 
 # Contact seciton view 

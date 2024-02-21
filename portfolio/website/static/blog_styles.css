@@ -4,14 +4,11 @@
 } */
 .blog_section {
     font-family: var(--body_font);
-    /* background-color: yellow; */
     max-width: 1300px;
 }
 
 .blog_section .blog_hero {
     margin: 0 auto;
-    /* background-color: var(--main_color); */
-    /* color: var(--background_color); */
     min-height: 30vh;
     text-align: center;
     display: flex;
@@ -22,7 +19,7 @@
 }
 
 .blog_hero .blog_title {
-    font-size: 45px;
+    font-size: 50px;
 }
 
 .blog_hero .blog_page_description {
@@ -50,7 +47,7 @@
     margin: auto;
     display: grid;
     gap: 1.5em;
-    grid-template-columns: repeat(auto-fill, minmax(265px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     padding: 30px 0;
 }
 
@@ -59,37 +56,37 @@
     flex-direction: column;
     text-decoration: none;
     color: rgb(124, 118, 118);
-    background-color: var(--background_color);
-    border-radius: 15px;
-    box-shadow: -5px 0px 25px 0px rgba(204,195,195,0.7) inset;
-    -webkit-box-shadow: -5px 0px 25px 0px rgba(204,195,195,0.7) inset;
-    -moz-box-shadow: -5px 0px 25px 0px rgba(204,195,195,0.7) inset;
+    background-color: white;
+    /* border-radius: 15px; */
+    box-shadow: -1px 3px 15px -2px rgba(117,113,113,0.56);
+    -webkit-box-shadow: -1px 3px 15px -2px rgba(117,113,113,0.56);
+    -moz-box-shadow: -1px 3px 15px -2px rgba(117,113,113,0.56);
 }
 
 /* Card image */
 .blog_section .articles_ .latest ._blog img {
     width: 100%;
     height: 200px;
-    border-radius: 15px 15px 0 0;
+    /* border-radius: 15px 15px 0 0; */
     object-fit: cover;
-    margin-bottom: 0;
 }
 
 /* Latest Individual Blog Description */
 .blog_section .articles_ .latest ._blog .blog_description {
     padding: 25px;
+    margin-bottom: 0;
     background-color: white;
     border-radius: 0 0 15px 15px;
 }
 
 .blog_section .articles_ .latest ._blog .blog_description .blog_title {
-    font-size: 20px;
+    font-size: 21px;
     margin-bottom: 16px;
     color: black;
 }
 
 .blog_section .articles_ .latest ._blog .blog_description .date_published {
-    font-size: 18px;
+    font-size: 17px;
     color: rgb(56, 57, 58);
     margin-bottom: 15px;
 }
