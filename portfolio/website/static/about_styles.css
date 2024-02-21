@@ -38,6 +38,11 @@
     text-decoration: none;
 }
 
+.about_page .about_hero .about_me a:hover {
+    border: #553C46 2px solid;
+    opacity: 0.8;
+    transition: color .25s linear, background-color .15s linear .1s;
+}
 
 
 .about_page .about_hero .img_div {

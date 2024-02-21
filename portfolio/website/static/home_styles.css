@@ -75,7 +75,7 @@
 .about_short .about_me .link_btns a {
     text-decoration: none;
     color: var(--background_color);
-    padding: 8px 10px;
+    padding: 0.75rem 1.5rem;
     background-color: #553C46;
     font-size: 19px;
     margin-right: 20px;
