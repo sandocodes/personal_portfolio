@@ -188,3 +188,25 @@
     font-weight: bold;
     /* text-decoration: none; */
 }
+
+
+/* Reach Out Section */
+.reach_out {
+    padding: 40px 20px;
+    text-align: center;
+    margin: 45px 0;
+    border-top: 1px solid lightgray;
+}
+
+.reach_out h3 {
+    font-size: 28px;
+}
+
+.reach_out p:first-of-type {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.reach_out p:last-of-type {
+    font-size: 18px;
+}
