@@ -7,7 +7,7 @@
         <div class="about_hero">
             <div class="about_me">
                 <h3>About Justin</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus voluptas tempore deserunt, placeat magni provident?</p>
+                <p>I am a Python Developer and Data Engineer adipisicing elit. Deserunt alias quo adipisci aspernatur impedit, enim modi dolorem dolor.</p>
                 <a href="../static/professional/Resume.pdf" target="_blank">Résumé</a>
             </div>
             <div></div>
@@ -32,9 +32,22 @@
                 </ul> 
             </div>
         </div>
-        <!-- Recent Projects -->
+        <!-- Recent Projects List -->
         <div class="recent_projects">
             <h3>Recent Projects</h3>
+            <div>
+                {% for project in feat_projects %}
+                <a href="{% url 'project_detail_page' slug=project.slug %}" class="_project">
+                    <img src="{{ project.image.url }}" alt="{{ project.name }}">
+                    <div class="project_description">
+                        <h4 class="project_title">{{project.name}}</h4>
+                        <h6 class="date_published">{{project.date_created.date}}</h6>
+                        <p class="snippet">{{project.snippet | safe}}</p>
+                    </div>
+                </a>
+                {% endfor %}
+            </div>
+            <a href="{% url 'website_projects_page' %}" class="all_projects_link">All Projects</a>
         </div>
     </div>
 {% endblock %}

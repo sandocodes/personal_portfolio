@@ -77,10 +77,11 @@
     border-radius: 15px;
     padding: 15px 20px;
     opacity: 0.8;
+    z-index: -1;
 }
 
 .about_page .about_profession .achievements h3 {
-    font-size: 30px;
+    font-size: 27px;
 }
 
 .about_page .about_profession .achievements ul {
@@ -100,10 +101,11 @@
     padding: 15px 20px;
     opacity: 0.8;
     color: var(--main_color);
+    z-index: -1;
 }
 
 .about_page .about_profession .work_history h3 {
-    font-size: 30px;
+    font-size: 27px;
 }
 
 .about_page .about_profession .work_history ul {
@@ -112,4 +114,77 @@
 }
 .about_page .about_profession .work_history ul li {
     padding: 0.25rem 1rem;
+}
+
+
+/* Recent Projects List */
+.recent_projects {
+    padding: 20px;
+    margin-bottom: 50px;
+    z-index: -1;
+}
+
+.recent_projects h3 {
+    font-size: 28px;
+}
+
+.recent_projects > div {
+    max-width: 100%;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+    padding: 50px 0;
+}
+
+.recent_projects > div ._project {
+    /* border: #706565 1px solid; */
+    display: grid;
+    grid-template-columns: 2fr 4fr;
+    color: var(--main_color);
+    min-height: auto;
+    text-decoration: none;
+    color: rgb(124, 118, 118);
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: -1px 3px 15px -2px rgba(117,113,113,0.56);
+    -webkit-box-shadow: -1px 3px 15px -2px rgba(117,113,113,0.56);
+    -moz-box-shadow: -1px 3px 15px -2px rgba(117,113,113,0.56);
+}
+
+.recent_projects > div ._project img {
+    min-height: 100%;
+    max-width: 100%;
+    border-radius: 15px 0 0 15px;
+    object-fit: cover;
+}
+
+.recent_projects > div ._project .project_description {
+    color: #553C46;
+    padding: 20px;
+}
+
+.recent_projects > div ._project .project_description .project_title {
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: 900;
+}
+
+.recent_projects > div ._project .project_description .date_published {
+    font-weight: 700;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.recent_projects > div ._project .project_description .snippet {
+    font-size: 17px;
+}
+
+.about_page .recent_projects .all_projects_link {
+    display: block;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 20px;
+    color: #553C46;
+    font-weight: bold;
+    /* text-decoration: none; */
 }
