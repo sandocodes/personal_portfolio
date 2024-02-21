@@ -1,6 +1,6 @@
 .blog_detail {
     font-family: var(--body_font);
-    max-width: 100%;
+    max-width: 1200px;
     margin: 0 auto;
     /* background-color: yellow; */
 }
@@ -38,7 +38,7 @@
 
 .blog_detail .blog_detail_body {
     margin-top: 20px;
-    max-width: 1200px;
+    max-width: 1000px;
     margin: auto;
     padding: 30px;
     font-size: 25px;

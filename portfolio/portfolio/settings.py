@@ -39,8 +39,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'website',
-    'ckeditor'
+    'ckeditor',
 ]
+
 
 DJANGO_ICONS = {
     "ICONS": {
