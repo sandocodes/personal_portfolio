@@ -1,1 +1,13 @@
 /* About Page Styles */
+.about_page {
+    max-width: 950px;
+    margin: auto;
+    background-color: yellow;
+}
+
+.about_page .about_hero {
+    background-color: green;
+    display: grid;
+    gap: 2em;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}

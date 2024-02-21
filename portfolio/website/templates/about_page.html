@@ -1,8 +1,15 @@
 {% extends 'base_layout.html' %}
-
+{% load static %}
+<!-- About Page -->
 {% block content %}
-    <div>
-        <h1>About Page</h1>
-        <p>Welcome to my About Page!</p>
+    <div class="about_page">
+        <div class="about_hero">
+            <div class="about_me">
+                <h3>About Justin Sando Kollie</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus voluptas tempore deserunt, placeat magni provident?</p>
+                <a href="../static/professional/Resume.pdf" target="_blank">Résumé</a>
+            </div>
+            <img src="https://avatars.githubusercontent.com/u/156034662?v=4" alt="my_image" class="my_image">
+        </div>
     </div>
 {% endblock %}
