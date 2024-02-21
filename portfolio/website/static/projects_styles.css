@@ -1,1 +1,41 @@
 /* Projects Page Styles */
+.project_section {
+    font-family: var(--link_font);
+    max-width: 1300px;
+}
+
+.project_section .project_hero {
+    margin: 0 auto;
+    min-height: 30vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+
+.project_hero .project_title {
+    font-size: 50px;
+}
+
+.project_hero .project_page_description {
+    font-size: 22px;
+    max-width: 650px;
+    line-height: 1.8rem;
+    margin: 25px 0;
+}
+
+.project_section ._projects  {
+    max-width: 930px;
+    margin: auto;
+}
+
+.project_section ._projects .latest_heading {
+    font-size: 25px;
+    padding: 40px 0;
+    border-top: 1px solid lightgray;
+}
+
+
+/* Projects */

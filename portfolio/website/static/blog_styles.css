@@ -57,7 +57,7 @@
     text-decoration: none;
     color: rgb(124, 118, 118);
     background-color: white;
-    /* border-radius: 15px; */
+    border-radius: 15px;
     box-shadow: -1px 3px 15px -7px rgba(117,113,113,0.56);
     -webkit-box-shadow: -1px 3px 15px -7px rgba(117,113,113,0.56);
     -moz-box-shadow: -1px 3px 15px -7px rgba(117,113,113,0.56);
