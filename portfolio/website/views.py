@@ -17,7 +17,7 @@ def home_page(request):
 def about_page(request):
     # template = loader.get_template('about_page.html')
     page_name = 'about_page.html'
-    featured_project = Project.objects.all()[:2]
+    featured_project = Project.objects.all()[:4]
     return render(request, page_name, {'title': 'About Page', 'feat_projects': featured_project,})
 
 
