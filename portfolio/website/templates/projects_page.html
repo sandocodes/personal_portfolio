@@ -4,22 +4,24 @@
     <div class="project_section">
         <!-- blog hero section -->
         <div class="project_hero">
-            <h3 class="project_title">Project</h3>
-            <p class="project_page_description">Some of my recent works on the latest programming topics, including languages like Python, JavaScript, Bash Scripting, Networking, Databases and many more.</p>
+            <h3 class="project_title">Projects</h3>
+            <p class="project_page_description">My recent work on the latest programming topics, including languages like Python, JavaScript, Bash Scripting, Networking, Databases and many more.</p>
         </div>
-        <div class="_projects">
-            <!-- Latest Projects -->
-            <h3 class="latest_heading">Recent Projects</h3>
-            {% for project in projects %}
-            <a href="{% url 'project_detail_page' slug=project.slug %}" class="_project">
-                <img src="{{ project.image.url }}" alt="{{ project.name }}">
-                <div class="project_description">
-                    <h4 class="project_title">{{project.name}}</h4>
-                    <h6 class="date_published">{{project.date_created.date}}</h6>
-                    <p>{{project.snippet | safe}}</p>
-                </div>
-            </a>
-            {% endfor %}
+        <!-- Featured Projects -->
+        <div class="featured_projects">
+            <h3>Recent Work</h3>
+            <div>
+                {% for project in projects %}
+                <a href="{% url 'project_detail_page' slug=project.slug %}" class="_project">
+                    <img src="{{ project.image.url }}" alt="{{ project.name }}">
+                    <div class="project_description">
+                        <h4 class="project_title">{{project.name}}</h4>
+                        <h6 class="date_published">{{project.date_created.date}}</h6>
+                        <p class="snippet">{{project.snippet | safe}}</p>
+                    </div>
+                </a>
+                {% endfor %}
+            </div>
         </div>
     </div>
 {% endblock %}
