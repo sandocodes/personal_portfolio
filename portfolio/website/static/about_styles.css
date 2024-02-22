@@ -66,10 +66,9 @@
     display: grid;
     gap: 2rem;
     grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
-    padding: 50px 0;
     height: auto;
     padding: 20px;
-    margin: 70px 0;
+    margin: 80px 0;
     border-top: 1px solid lightgray;
     border-bottom: 1px solid lightgray;
 }
