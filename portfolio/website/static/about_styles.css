@@ -212,3 +212,58 @@
 .reach_out p:last-of-type {
     font-size: 18px;
 }
+
+
+/* Responsive About Page */
+/* For mobile phones: */
+@media only screen and (max-width: 768px) {
+    .about_page .about_hero {
+        display: flex;
+        flex-direction: column;
+        margin: 30px 0;
+    }
+    
+    .about_page .about_hero .img_div {
+        order: 1;
+    }
+    
+    .about_page .about_hero .about_me {
+        order: 2;
+    }
+
+    .about_page .about_hero .empty_div {
+        display: none;
+        /* height: 20px; */
+        order: 3;
+        background-color: yellow;
+    }
+
+    .about_page .about_hero .img_div .my_image {
+        height: auto;
+        width: 100%;
+    }
+
+    .about_page .about_hero .about_me h3 {
+        font-size: 2rem;
+    }
+    
+    .about_page .about_hero .about_me p {
+        margin: 15px 0;
+        font-size: 1.1rem;
+    }
+    
+    .about_page .about_hero .about_me a {
+        display: inline-block;
+        margin: 5px 0;
+        font-size: 1.1rem;
+        padding: 0.75rem 1.5rem;
+    }
+    
+
+    /* Professional Section */
+    .about_page .about_page .about_profession {
+        background-color: yellow;
+        max-width: 100%;
+        margin: 0;
+    }
+}
