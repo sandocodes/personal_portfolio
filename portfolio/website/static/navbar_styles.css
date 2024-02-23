@@ -65,6 +65,31 @@ nav .hamburger_menu {
 }
 
 
+/* Drop down Navs */
+.drop_down_nav {
+    max-width: 1500px;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    padding: 10px 25px;
+    min-height: 40px;
+    border-bottom: 1px solid var(--border_line);
+    background-color: var(--background_color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 85.5px;
+    z-index: 500;
+}
+
+.drop_down_nav_links a {
+    text-decoration: none;
+    color: var(--main_color);
+    font-weight: bold;
+}
+
 
 /* On Smaller Devices (Tablets, iPads and Phones) */
     /* Step 1) hide the social link in the navbar */
@@ -95,9 +120,32 @@ nav .hamburger_menu {
 
     .hamburger_menu .lines span {
         /* display: block; */
-        height: 4px;
+        height: 3px;
         width: 100%;
         /* border-radius: 10px; */
         /* background: var(--main_color); */
+    }
+
+    /* Drop down Navs */
+    .drop_down_nav {
+        max-width: 1500px;
+        margin: 0 auto;
+        margin-bottom: 2rem;
+        padding: 10px 25px;
+        min-height: 40px;
+        border-bottom: 1px solid var(--border_line);
+        background-color: var(--background_color);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 70px;
+        z-index: 500;
+    }
+
+    .drop_down_nav_links a {
+        text-decoration: none;
     }
 }

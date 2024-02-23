@@ -2,6 +2,7 @@
 .project_section {
     font-family: var(--link_font);
     max-width: 1300px;
+    margin-top: 30px;
 }
 
 .project_section .project_hero {
