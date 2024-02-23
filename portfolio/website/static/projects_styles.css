@@ -60,7 +60,6 @@
     min-height: auto;
     text-decoration: none;
     color: rgb(124, 118, 118);
-    border-radius: 15px;
     background-color: white;
     box-shadow: -1px 3px 15px -7px rgba(117,113,113,0.56);
     -webkit-box-shadow: -1px 3px 15px -7px rgba(117,113,113,0.56);
@@ -70,7 +69,6 @@
 .featured_projects > div ._project img {
     min-height: 100%;
     max-width: 100%;
-    border-radius: 15px 0 0 15px;
     object-fit: cover;
 }
 

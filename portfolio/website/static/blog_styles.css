@@ -57,7 +57,7 @@
     text-decoration: none;
     color: rgb(124, 118, 118);
     background-color: white;
-    border-radius: 15px;
+    /* border-radius: 15px; */
     box-shadow: -1px 3px 15px -7px rgba(117,113,113,0.56);
     -webkit-box-shadow: -1px 3px 15px -7px rgba(117,113,113,0.56);
     -moz-box-shadow: -1px 3px 15px -7px rgba(117,113,113,0.56);
@@ -67,7 +67,7 @@
 .blog_section .articles_ .latest ._blog img {
     width: 100%;
     height: 200px;
-    border-radius: 15px 15px 0 0;
+    /* border-radius: 15px 15px 0 0; */
     object-fit: cover;
 }
 
@@ -76,7 +76,7 @@
     padding: 25px;
     margin-bottom: 0;
     background-color: white;
-    border-radius: 0 0 15px 15px;
+    /* border-radius: 0 0 15px 15px; */
 }
 
 .blog_section .articles_ .latest ._blog .blog_description .blog_title {
@@ -99,3 +99,22 @@
 
 /* /* Blog Posts Styling  */
 /* Latest Posts */
+
+
+
+/* Responsive Blog Page */
+/* For mobile phones: */
+@media only screen and (max-width: 768px) {
+    /* .blog_section {
+        padding: 0 20px;
+    } */
+
+    .blog_section .articles_ {
+        max-width: 950px;
+        padding: 40px;
+    }
+
+    /* .blog_section .articles_ .latest {
+        padding: 0 20px;
+    } */
+}

@@ -89,7 +89,7 @@
 
 .about_page .about_profession .achievements ul {
     padding: 15px;
-    /* list-style: none; */
+    list-style-type: square;
 }
 .about_page .about_profession .achievements ul li {
     padding: 0.25rem 1rem;
@@ -112,7 +112,7 @@
 
 .about_page .about_profession .work_history ul {
     padding: 15px;
-    /* list-style: none; */
+    list-style-type: square;
 }
 .about_page .about_profession .work_history ul li {
     padding: 0.25rem 1rem;

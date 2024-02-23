@@ -1,0 +1,54 @@
+/* Project Detail Styling */
+.project_detail {
+    /* background-color: yellow; */
+    padding: 50px 20px;
+}
+
+.project_detail .project {
+    max-width: 950px;
+    margin: auto;
+    text-align: center;
+    /* background-color: lightcoral; */
+}
+
+.project_detail .project .project_name {
+    font-size: 3.1rem;
+    max-width: 600px;
+    margin: 5px auto 25px auto;
+    font-weight: 800;
+    letter-spacing: 1.2px;
+}
+
+
+.project_detail .project .project_date {
+    font-size: 1.2rem;
+}
+
+.project_detail .project .project_description {
+    /* background-color: yellow; */
+    max-width: 800px;
+    margin: auto;
+}
+
+.project_detail .project .project_description .project_link {
+    margin: 10px 0 30px 0;
+}
+
+.project_detail .project .project_description .project_link a {
+    color: var(--main_color);
+    font-size: 1.2rem;
+    opacity: 0.8;
+}
+
+.project_detail .project .project_description .project_image {
+    width: 100%;
+}
+
+.project_detail .project .project_description div {
+    padding: 50px 0;
+    font-size: 1.1rem;
+    text-align: left;
+}
+
+
+

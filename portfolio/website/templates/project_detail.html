@@ -1,16 +1,18 @@
 {% extends 'base_layout.html' %}
 
 {% block content %}
-<div class="blog_detail">
-    <div class="blog">
-        <h3>{{ project.name }}</h3>
-        <p><a href="https://github.com/sandocodes/100_Days_of_code_python/tree/main/day_20/project" target="_blank">Project Link</a></p>
-        <p>{{ project.date_created.date }}</p>
-        {% if project.image %}
-        <img src="{{project.image.url}}" alt="{{project.name}}">
-        {% endif %}
-        <div>
-            {{ project.descritption | safe }}
+<div class="project_detail">
+    <div class="project">
+        <h3 class="project_name">{{ project.name }}</h3>
+        <p class="project_date">{{ project.date_created.date }}</p>
+        <div class="project_description">
+            <p class="project_link"><a href="https://github.com/sandocodes/100_Days_of_code_python/tree/main/day_20/project" target="_blank">Source Code</a></p>
+            {% if project.image %}
+            <img src="{{project.image.url}}" alt="{{project.name}}" class="project_image">
+            {% endif %}
+            <div>
+                {{ project.descritption | safe }}
+            </div>
         </div>
     </div>
 </div>
