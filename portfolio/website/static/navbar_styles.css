@@ -84,12 +84,20 @@ nav .hamburger_menu {
     z-index: 500;
 }
 
+/* .drop_down_nav_links {
+    padding: 0 30px;
+} */
+
 .drop_down_nav_links a {
     text-decoration: none;
     color: var(--main_color);
-    font-weight: bold;
+    font-weight: 600;
+    margin-right: 20px;
 }
 
+.drop_down_nav_links a:last-child {
+    margin-right: 0;
+}
 
 /* On Smaller Devices (Tablets, iPads and Phones) */
     /* Step 1) hide the social link in the navbar */
@@ -131,7 +139,7 @@ nav .hamburger_menu {
         max-width: 1500px;
         margin: 0 auto;
         margin-bottom: 2rem;
-        padding: 10px 25px;
+        padding: 10px 20px;
         min-height: 40px;
         border-bottom: 1px solid var(--border_line);
         background-color: var(--background_color);
@@ -142,16 +150,32 @@ nav .hamburger_menu {
         left: 0;
         right: 0;
         top: 70px;
-        z-index: 500;
+        z-index: 500;box-shadow: -1px 3px 15px -7px rgba(117,113,113,0.56);
+        -webkit-box-shadow: -1px 3px 15px -7px rgba(117,113,113,0.56);
+        -moz-box-shadow: -1px 3px 15px -7px rgba(117,113,113,0.56);
     }
 
     .drop_down_nav .drop_down_nav_links {
         display: flex;
-
+        flex-direction: column;
+        padding: 0;
+        /* background-color: yellow; */
+        width: 100%;
     }
 
-    .drop_down_nav .drop_down_nav_links a {
+    .drop_down_nav_links a {
+        display: block;
         text-decoration: none;
+        color: var(--main_color);
+        font-weight: 600;
+        text-align: center;
+        border-bottom: 1px solid lightgray;
+        /* background-color: yellow; */
+        padding: 7px 0;
     }
     
+    .drop_down_nav_links a:last-child {
+        border: none;
+    }
+
 }
