@@ -135,7 +135,7 @@ nav .hamburger_menu {
     }
 
     /* Drop down Navs */
-    .drop_down_nav {
+    ._drop_down {
         max-width: 1500px;
         margin: 0 auto;
         margin-bottom: 2rem;
@@ -150,10 +150,11 @@ nav .hamburger_menu {
         left: 0;
         right: 0;
         top: 70px;
+        /* display: none; */
         
     }
 
-    .drop_down_nav .drop_down_nav_links {
+    ._drop_down .drop_down_nav_links {
         display: flex;
         flex-direction: column;
         padding: 0;
@@ -162,18 +163,23 @@ nav .hamburger_menu {
         width: 100%;
     }
 
-    .drop_down_nav_links a {
+    ._drop_down .drop_down_nav_links a {
         display: block;
         text-decoration: none;
         color: var(--main_color);
         font-weight: 600;
         text-align: center;
         text-align: center;
+        margin: 0;
         border-bottom: 1px solid lightgray;
         padding: 7px 0;
     }
+
+    ._drop_down .drop_down_nav_links a:hover {
+        background-color: #e2e2e2;
+    }
     
-    .drop_down_nav_links a:last-child {
+    ._drop_down .drop_down_nav_links a:last-child {
         border: none;
     }
 
