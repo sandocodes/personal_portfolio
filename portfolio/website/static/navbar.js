@@ -1,13 +1,11 @@
 // Navbar //
-
-hamburger = document.getElementById('hamburger_menu');
-drop_down_nav = document.getElementById('drop_down_nav');
+let hamburger = document.getElementById('hamburger_menu');
+let drop_down = document.getElementById('drop_down_nav');
 
 
 function respnav() {
-    // Add class
-    alert("Responsive Nav Triggered.")
+    drop_down.classList.toggle('active');
 }
 
 
-hamburger.addEventListener("click", respnav)
+hamburger.addEventListener("click", respnav);

@@ -12,9 +12,7 @@ nav {
     left: 0;
     right: 0;
     top: 0;
-    z-index: 500;z-index: 500;box-shadow: -1px 3px 15px -7px rgba(117,113,113,0.56);
-    -webkit-box-shadow: -1px 3px 15px -7px rgba(117,113,113,0.56);
-    -moz-box-shadow: -1px 3px 15px -7px rgba(117,113,113,0.56);
+    z-index: 500;
 }
 
 /* Logo */
@@ -38,7 +36,6 @@ nav .social_links .fa-brands {
 
 /* Hamburger Menu */
 nav .hamburger_menu {
-    /* background-color: yellow; */
     width: 235px;
     display: flex;
     justify-content: end;
@@ -48,7 +45,6 @@ nav .hamburger_menu {
     display: block;
     height: 26px;
     width: 32px;
-    /* position: absolute; */
     top: 17px;
     left: 20px;
     z-index: 2;
@@ -68,7 +64,7 @@ nav .hamburger_menu {
 
 
 /* Drop down Navs */
-.drop_down_nav {
+.drop_down {
     max-width: 1500px;
     margin: 0 auto;
     margin-bottom: 2rem;
@@ -83,29 +79,33 @@ nav .hamburger_menu {
     left: 0;
     right: 0;
     top: 85px;
-    z-index: 500;z-index: 500;box-shadow: -1px 3px 15px -7px rgba(117,113,113,0.56);
-    -webkit-box-shadow: -1px 3px 15px -7px rgba(117,113,113,0.56);
-    -moz-box-shadow: -1px 3px 15px -7px rgba(117,113,113,0.56);
+    z-index: 500;
 }
 
-.drop_down_nav_links a {
+.drop_down .drop_down_nav_links a {
     text-decoration: none;
     color: var(--main_color);
     font-weight: 600;
     margin-right: 20px;
 }
 
-.drop_down_nav_links a:last-child {
+.drop_down .drop_down_nav_links a:hover {
+    opacity: 0.7;
+}
+
+.drop_down .drop_down_nav_links a:last-child {
     margin-right: 0;
 }
 
-/* On Smaller Devices (Tablets, iPads and Phones) */
-    /* Step 1) hide the social link in the navbar */
-    /* Step 2) Display reduce the 'nav .hamburger_menu' width to appropriate width */
-    /* Step 3) Upon a click of the hanburger lines, display the hidden menu links (Home, About, Projects, Blog and Contact) */
+
 /* Responsive Blog Detail Page */
 /* For mobile phones: */
 @media only screen and (max-width: 768px) {
+    nav {
+        padding: 7px 15px;
+        min-height: 20px;
+    }
+
     nav .logo img {
         height: 45px;
     }
@@ -116,70 +116,69 @@ nav .hamburger_menu {
 
     /* Hamburger Menu */
     nav .hamburger_menu {
-        /* background-color: yellow; */
         width: 117.5px;
     }
 
     .hamburger_menu .lines {
-        /* display: block; */
         height: 20px;
         width: 25px;
     }
 
     .hamburger_menu .lines span {
-        /* display: block; */
         height: 3px;
         width: 100%;
-        /* border-radius: 10px; */
-        /* background: var(--main_color); */
     }
 
     /* Drop down Navs */
-    ._drop_down {
+    .drop_down {
         max-width: 1500px;
         margin: 0 auto;
         margin-bottom: 2rem;
-        padding: 10px 0px;
+        padding: 0;
         min-height: 40px;
         border-bottom: 1px solid var(--border_line);
         background-color: var(--background_color);
-        display: flex;
         justify-content: center;
         align-items: center;
         position: fixed;
         left: 0;
         right: 0;
-        top: 70px;
-        /* display: none; */
-        
+        top: 63px;
+        box-shadow: -1px 3px 15px -7px rgba(117,113,113,0.56);
+        -webkit-box-shadow: -1px 3px 15px -7px rgba(117,113,113,0.56);
+        -moz-box-shadow: -1px 3px 15px -7px rgba(117,113,113,0.56);
+        display: none;  
     }
 
-    ._drop_down .drop_down_nav_links {
+    .active {
+        display: flex;
+    }
+
+    .drop_down .drop_down_nav_links {
         display: flex;
         flex-direction: column;
         padding: 0;
         text-align: center;
-        /* background-color: yellow; */
         width: 100%;
     }
 
-    ._drop_down .drop_down_nav_links a {
+    .drop_down .drop_down_nav_links a {
         display: block;
         text-decoration: none;
         color: var(--main_color);
         font-weight: 600;
-        text-align: center;
         text-align: center;
         margin: 0;
         border-bottom: 1px solid lightgray;
         padding: 7px 0;
     }
 
-    ._drop_down .drop_down_nav_links a:hover {
-        background-color: #e2e2e2;
+    .drop_down .drop_down_nav_links a:hover {
+        color: #553C46;
+        opacity: 0.7;
     }
     
-    ._drop_down .drop_down_nav_links a:last-child {
+    .drop_down .drop_down_nav_links a:last-child {
         border: none;
     }
 
