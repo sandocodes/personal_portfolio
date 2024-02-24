@@ -145,7 +145,13 @@ nav .hamburger_menu {
         z-index: 500;
     }
 
-    .drop_down_nav_links a {
+    .drop_down_nav .drop_down_nav_links {
+        display: flex;
+
+    }
+
+    .drop_down_nav .drop_down_nav_links a {
         text-decoration: none;
     }
+    
 }
