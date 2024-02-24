@@ -134,7 +134,7 @@ nav .hamburger_menu {
         max-width: 1500px;
         margin: 0 auto;
         margin-bottom: 2rem;
-        padding: 0;
+        padding: 10px 0;
         min-height: 40px;
         border-bottom: 1px solid var(--border_line);
         background-color: var(--background_color);
