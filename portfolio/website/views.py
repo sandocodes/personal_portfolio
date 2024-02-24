@@ -31,7 +31,7 @@ def projects_page(request):
 def project_detail_page(request, slug):
     page_name = 'project_detail.html'
     project = Project.objects.get(slug=slug)
-    return render(request, page_name, {'title': 'Project Detail Page', 'project': project})
+    return render(request, page_name, {'title': 'Project Detail', 'project': project})
 
 
 # blog seciton view - Will render blog posts later
