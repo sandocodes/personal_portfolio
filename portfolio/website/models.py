@@ -1,5 +1,5 @@
 from django.db import models
-from ckeditor.fields import RichTextField
+from django_ckeditor_5.fields import CKEditor5Field
 
 # Create your models here.
 
@@ -16,13 +16,13 @@ class Category(models.Model):
 class BlogPost(models.Model):
     # id field will automatically be generated each time a new blog post is created
     title = models.CharField(max_length=255, unique=True)
-    body = RichTextField(blank=True, null=True)
+    body = CKEditor5Field(blank=True, null=True)
     slug = models.SlugField(max_length=255, unique=True)
     date_created = models.DateTimeField(auto_now_add=True)
     last_modified = models.DateField(auto_now=True)
     categories = models.ManyToManyField("Category", related_name="posts")
     image = models.ImageField(upload_to="images/", null=True, blank=True)
-    blog_snippet = RichTextField(blank=True, null=True)
+    blog_snippet = CKEditor5Field(blank=True, null=True)
 
     def __str__(self) -> str:
         return self.title
@@ -42,7 +42,7 @@ class Language(models.Model):
 # Projects
 class Project(models.Model):
     name = models.CharField(max_length=255, unique=True)
-    descritption = RichTextField(blank=False, null=False)
+    descritption = CKEditor5Field(blank=False, null=False)
     slug = models.SlugField(max_length=255, unique=True)
     date_created = models.DateTimeField(auto_now_add=True)
     last_modified = models.DateField(auto_now=True)
